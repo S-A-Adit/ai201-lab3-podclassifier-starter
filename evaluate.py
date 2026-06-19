@@ -48,42 +48,28 @@ def run_evaluation() -> dict:
 
 
 def compute_accuracy(predictions: list[str], ground_truth: list[str]) -> float:
-    """
-    Compute overall classification accuracy.
-
-    TODO — Milestone 3:
-
-    Accuracy = number of correct predictions / total predictions.
-    A prediction is correct when it exactly matches the ground truth label.
-
-    Before writing code, complete specs/evaluation-spec.md.
-    """
-    return 0.0
+    if not predictions:
+        return 0.0
+    correct = sum(1 for p, g in zip(predictions, ground_truth) if p == g)
+    return correct / len(predictions)
 
 
 def compute_per_class_accuracy(
     predictions: list[str], ground_truth: list[str]
 ) -> dict[str, dict]:
-    """
-    Compute accuracy broken down by each label class.
-
-    TODO — Milestone 3 (complete after compute_accuracy):
-
-    For each label in VALID_LABELS, compute:
-      - "correct"  : number of episodes with this ground-truth label predicted correctly
-      - "total"    : number of episodes with this ground-truth label
-      - "accuracy" : correct / total (0.0 if total is 0)
-
-    Return a dict keyed by label. Example:
-      {
-        "interview": {"correct": 4, "total": 5, "accuracy": 0.8},
-        "solo":      {"correct": 5, "total": 5, "accuracy": 1.0},
-        ...
-      }
-
-    Before writing code, complete specs/evaluation-spec.md.
-    """
-    return {label: {"correct": 0, "total": 0, "accuracy": 0.0} for label in VALID_LABELS}
+    stats = {label: {"correct": 0, "total": 0, "accuracy": 0.0} for label in VALID_LABELS}
+    
+    for pred, truth in zip(predictions, ground_truth):
+        if truth in stats:
+            stats[truth]["total"] += 1
+            if pred == truth:
+                stats[truth]["correct"] += 1
+                
+    for label, metrics in stats.items():
+        if metrics["total"] > 0:
+            metrics["accuracy"] = metrics["correct"] / metrics["total"]
+            
+    return stats
 
 
 def format_evaluation_report(eval_results: dict) -> str:

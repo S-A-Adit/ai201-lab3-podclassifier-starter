@@ -1,0 +1,165 @@
+{
+  "summary": "Hello! I'm Adit, a Computer Science student in the Baldwin Honor Program at Drew University and I am also doing a Graduate Certification in Data Analytics. My interests lie at the in between AI/ML, and full-stack development. Through CodePath's AI Engineering, Advanced Web Development, and Technical Interview Preparation programs, I have strengthened my skills in building scalable applications and solving complex technical problems.",
+  "education": [
+    {
+      "school": "Drew University",
+      "degree": "Bachelor of Science",
+      "major": "Computer Science",
+      "gpa": null,
+      "start_month": "January",
+      "start_year": "2024",
+      "end_month": "May",
+      "end_year": "2027",
+      "is_current": false
+    },
+    {
+      "school": "CodePath",
+      "degree": null,
+      "major": "Computer Science",
+      "gpa": null,
+      "start_month": "January",
+      "start_year": "2025",
+      "end_month": "May",
+      "end_year": "2025",
+      "is_current": false
+    }
+  ],
+  "experience": [
+    {
+      "employer": "Drew University",
+      "role": "Undergraduate Research for Computer Science",
+      "location": "Madison, New Jersey",
+      "start_month": "May",
+      "start_year": "2026",
+      "end_month": null,
+      "end_year": null,
+      "is_current": true,
+      "description": "No description available"
+    },
+    {
+      "employer": "Drew University",
+      "role": "Drop-in Host",
+      "location": "Madison, New Jersey",
+      "start_month": "October",
+      "start_year": "2025",
+      "end_month": null,
+      "end_year": null,
+      "is_current": true,
+      "description": "No description available"
+    },
+    {
+      "employer": "Drew University",
+      "role": "Embedded Learning Fellow",
+      "location": "Madison, New Jersey",
+      "start_month": "August",
+      "start_year": "2025",
+      "end_month": null,
+      "end_year": null,
+      "is_current": true,
+      "description": "Facilitated learning and academic support for a 13-student CSCI 151 (Object-Oriented Programming in Java) class by assisting with coding exercises, addressing individual queries, and conducting additional help sessions to enhance student understanding and performance. Collaborated with the course professor to organize quiz reviews, manage supplemental instructional tasks, and improve overall class efficiency through proactive student engagement and tailored academic support"
+    },
+    {
+      "employer": "Drew University",
+      "role": "Subject Tutor",
+      "location": "Madison, New Jersey",
+      "start_month": "February",
+      "start_year": "2025",
+      "end_month": null,
+      "end_year": null,
+      "is_current": true,
+      "description": "Provided academic support for Computer Science and Math courses, through drop-in and scheduled tutoring sessions. Helped students improve their understanding of complex concepts by breaking down problems, guiding them through problem-solving techniques, and fostering independent learning."
+    },
+    {
+      "employer": "AFFiNE",
+      "role": "Open Source Developer",
+      "location": "Remote",
+      "start_month": "December",
+      "start_year": "2025",
+      "end_month": "February",
+      "end_year": "2026",
+      "is_current": false,
+      "description": "Improved image rendering in AFFiNE by adding image-rendering: pixelated and nearest-neighbor scaling to keep pixel art and low-res icons sharp when scaled. Fixed data handling bugs by correcting Table View sorting for null/undefined values and stabilizing Notion HTML imports by ignoring invalid AST children, preventing crashes and disordered imports."
+    },
+    {
+      "employer": "Drew University Tilghman International Center",
+      "role": "International Ambassador",
+      "location": "Madison, New Jersey",
+      "start_month": "August",
+      "start_year": "2025",
+      "end_month": "August",
+      "end_year": "2025",
+      "is_current": false,
+      "description": "No description available"
+    },
+    {
+      "employer": "Indiana University Bloomington",
+      "role": "Team Member | IU ISCA Datathon",
+      "location": "Bloomington, Indiana",
+      "start_month": "July",
+      "start_year": "2025",
+      "end_month": "August",
+      "end_year": "2025",
+      "is_current": false,
+      "description": "Competed in a Datathon hosted by Indiana University\u2019s Institute for the Study of Contemporary Antisemitism (ISCA), developing a machine learning solution for detecting online antisemitic content. Scraped and filtered 300+ social media posts from X (Twitter) using BrightData\u2019s API, followed by manual annotation for dataset based on the IHRA Working Definition of Antisemitism, and quantified inter-annotator reliability using Krippendorff's Alpha (\u03b1 = .157) to statistically validate dataset subjectivity and identify areas for guideline improvement. Fine-tuned a twitter-roberta-base-offensive transformer model using PyTorch on annotated datasets for detecting antisemitic hate speech and conspiracy theories. Evaluated model performance (71% accuracy) and conducted error analysis to reveal weaknesses in detecting nuanced hate speech; validated generalizability on an unseen dataset, achieving 97% recall for non-offensive content while identifying challenges with rare offensive cases."
+    },
+    {
+      "employer": "Monstarlab Bangladesh",
+      "role": "Software Engineer Intern",
+      "location": "Dhaka, Bangladesh",
+      "start_month": "June",
+      "start_year": "2025",
+      "end_month": "August",
+      "end_year": "2025",
+      "is_current": false,
+      "description": "Collaborated with a team of 6 developers to build reusable React components and modernize web pages, reducing UI inconsistencies, improving responsiveness, and cutting page load times by 25%, while implementing UX best practices to reduce user friction by 30%. Maintained codebase integrity using Git version control while communicating project updates and progress to senior developers, ensuring UI enhancements aligned with product goals and were delivered on schedule."
+    },
+    {
+      "employer": "Freelance",
+      "role": "High School Math Tutor",
+      "location": "Dhaka, Bangladesh",
+      "start_month": "July",
+      "start_year": "2023",
+      "end_month": "December",
+      "end_year": "2023",
+      "is_current": false,
+      "description": "Instructed students in five mathematics subjects, including: Algebra, Geometry, Trigonometry, Pre-Calculus, and Statistics. Delivered targeted IGCSE (The International General Certificate of Secondary Education) exam preparation tutoring, to aid students in mastering mathematical concepts and problem-solving strategies. Succeeded in improving student grades by a minimum of 15% from the prep exam to the final exam"
+    }
+  ],
+  "projects": [
+    {
+      "title": "IU ISCA Datathon Project",
+      "start_month": "July",
+      "start_year": "2025",
+      "end_month": "August",
+      "end_year": "2025",
+      "is_current": false,
+      "description": "Developed a machine learning solution for detecting online antisemitic content using PyTorch and Twitter data. Fine-tuned a twitter-roberta-base-offensive transformer model to detect antisemitic hate speech and conspiracy theories.",
+      "url": null
+    }
+  ],
+  "organizations": [
+    {
+      "organization": "Drew University Center for Academic Excellence",
+      "role": "Subject Tutor, Embedded Learning Fellow, and Statistics Drop-In Host",
+      "start_month": "February",
+      "start_year": "2025",
+      "end_month": null,
+      "end_year": null,
+      "is_current": true,
+      "description": "Provided academic support for Computer Science and Math courses, facilitated learning and academic support for students, and hosted drop-in sessions for statistics students."
+    }
+  ],
+  "skills": [
+    "Full-Stack Development",
+    "Software Development",
+    "JSON Web Token (JWT)",
+    "Python",
+    "Node.js",
+    "SQL",
+    "React",
+    "Git",
+    "PyTorch",
+    "Machine Learning",
+    "Data Analytics"
+  ]
+}
